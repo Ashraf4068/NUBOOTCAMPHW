@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <title>Cimate Dashboard</title>
+
+  <!-- Bootstrap CSS -->
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Bring in my own stylesheet -->
+  <link rel="stylesheet" href="Style-sheet.css" media="screen">
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              
+
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Data.html">Data</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="MaxTemperature.html">Max Temperatue</a>
+                    <a class="dropdown-item" href="Humidity.html">Humidity</a>
+                    <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+                    <a class="dropdown-item" href="WindSpeed.html">Windspeed</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <article class="description-content">
+          <h1 class="description-header text-center">Cloudiness</h1>
+          <hr class="description-hr"/>
+          <img src="Resources/lat vs cloudiness.png" alt="" class="img-responsive"/>
+          <p>There is no strong relationship between latitude and cloudiness. However, it is interesting to see that a strong band of cities is at 0%, 80%, and 90% cloudiness.</p>
+        </article> <!-- article -->
+      </div> <!-- col-sm-8 -->
+
+      <div class="col-sm-4">
+        <!-- Visualizations imageNav area -->
+        <section id="imageNav-area">
+          <div class="imageNav-content">
+            <div class="imageNav-header text-center">Visualizations</div>
+            <hr />
+            <div id="images">
+                    <a href="MaxTemperature.html"><img src="Resources/lat vs max temp.png" class="imageNav-photo"></a>
+                    <a href="Humidity.html"><img src="Resources/lat vs humidity.png" class="imageNav-photo"></a>
+                    <a href="Cloudiness.html"><img src="Resources/lat vs cloudiness.png" class="imageNav-photo"></a>
+                    <a href="WindSpeed.html"><img src="Resources/lat vas wind.png" class="imageNav-photo"></a>  
+            </div>
+          </div>  <!-- imageNav content -->
+        </section>  <!-- imageNav-area -->
+        <!-- End of Visualization imageNav area -->
+      </div> <!--  col-sm-4  -->
+
+    </div> <!-- row  -->
+  </div> <!-- End of the container -->
+
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
